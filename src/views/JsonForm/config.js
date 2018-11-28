@@ -1,6 +1,6 @@
 export default [
   {
-    title: '名字',
+    title: '文本输入框',
     key: 'name',
     component: 'Input',
     DefaultValue: 123,
