@@ -1,35 +1,39 @@
 <template>
-  <el-table :data="res" border style="width: 100%">
-    <el-table-column :label="item.label" v-for="item in column" :key="item.key" align="center">
-      <template slot-scope="scope">
-        <i class="el-icon-plus"/>
-        <i class="el-icon-minus"/>
+  <div>
+    <tableColumn :data="data" :columns="columns">
+      <template slot="__opt" slot-scope="scope">
+        <el-button size="mini" type="danger" @click="test(scope)">点我</el-button>
       </template>
-    </el-table-column>
-  </el-table>
+    </tableColumn>
+  </div>
 </template>
 
 <script>
-import data from "./data.js";
-import formatData from "./index.js";
+const columns = [
+  { label: "", key: "__spread", width: "200" },
+  { label: "ID", key: "id" },
+  { label: "事件", key: "event" },
+  { label: "时间线", key: "timeLine" },
+  { label: "操作", key: "__opt" }
+];
 
-const column = [{ label: "ID", key: "id" }, { label: "事件", key: "event" }];
+import data from "./data.js";
+
+import tableColumn from "./tableColumn";
 export default {
-  name: "tree-table",
+  components: {
+    tableColumn
+  },
   data() {
     return {
-      column,
-      data,
-      res: {},
-      linkArr: []
+      columns,
+      data
     };
   },
-  created() {
-    this.res = this.formatData(this.data);
-    console.log("this.res", this.res);
-  },
   methods: {
-    formatData
+    test(scope) {
+      this.$message.success(`${scope.scope.row.event}，来啦老弟`);
+    }
   }
 };
 </script>
