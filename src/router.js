@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Layout from './components/Layout.vue'
 import Home from './views/Home/index.vue'
 
 Vue.use(Router)
@@ -9,22 +10,34 @@ export default new Router({
     {
       path: '/',
       name: '主页',
-      component: Home
+      component:Layout,
+      children: [
+        { path: '', component: Home},
+      ]
     },
     {
       path: '/treetable',
       name: '树表',
-      component: () => import('./views/TreeTable/index.vue')
+      component:Layout,
+      children: [
+        { path: '', component: () => import('./views/TreeTable/index.vue') },
+      ]
     },
     {
       path: '/jsonform',
       name: '生成表单',
-      component: () => import('./views/JsonForm/index.vue')
+      component:Layout,
+      children: [
+        { path: '', component: () => import('./views/JsonForm/index.vue') },
+      ]
     },
     {
       path:'/bubble',
       name:'泡泡',
-      component:()=>import('./views/Bubble/index.vue')
+      component:Layout,
+      children: [
+        { path: '', component: () => import('./views/Bubble/index.vue') },
+      ]
     }
   ]
 })
