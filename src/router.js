@@ -14,7 +14,7 @@ export default new Router({
     {
       path: '/treetable',
       name: '树表',
-      component: () => import('./views/treeTable/index.vue')
+      component: () => import('./views/TreeTable/index.vue')
     },
     {
       path: '/jsonform',
