@@ -1,82 +1,87 @@
-export default [
-  {
-    id: 0,
-    event: '事件1',
-    timeLine: 50,
-    comment: '无'
-  },
-  {
-    id: 1,
-    event: '事件1',
-    timeLine: 100,
-    comment: '无',
-    children: [
-      {
-        id: 2,
-        event: '事件2',
-        timeLine: 10,
-        comment: '无'
-      },
-      {
-        id: 3,
-        event: '事件3',
-        timeLine: 90,
-        comment: '无',
-        children: [
-          {
-            id: 4,
-            event: '事件4',
-            timeLine: 5,
-            comment: '无'
-          },
-          {
-            id: 5,
-            event: '事件5',
-            timeLine: 10,
-            comment: '无'
-          },
-          {
-            id: 6,
-            event: '事件6',
-            timeLine: 75,
-            comment: '无',
-            children: [
-              {
-                id: 7,
-                event: '事件7',
-                timeLine: 50,
-                comment: '无',
-                children: [
-                  {
-                    id: 71,
-                    event: '事件71',
-                    timeLine: 25,
-                    comment: 'xx'
-                  },
-                  {
-                    id: 72,
-                    event: '事件72',
-                    timeLine: 5,
-                    comment: 'xx'
-                  },
-                  {
-                    id: 73,
-                    event: '事件73',
-                    timeLine: 20,
-                    comment: 'xx'
-                  }
-                ]
-              },
-              {
-                id: 8,
-                event: '事件8',
-                timeLine: 25,
-                comment: '无'
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+export const data = {
+  button: [
+    {
+      type: '',
+      name: '账号绑定',
+      key: '',
+      url: '',
+      media_id: '',
+      appid: '',
+      page_path: '',
+      sub_button: [
+        {
+          type: 'view',
+          name: '推送开关',
+          key: '',
+          url: 'https://activity.wallstreetcn.com/wechat-notice/#/',
+          media_id: '',
+          appid: '',
+          page_path: '',
+          sub_button: []
+        },
+        {
+          type: 'view',
+          name: '绑定账号',
+          key: '',
+          url: 'https://m.wallstreetcn.com/bind/wechat',
+          media_id: '',
+          appid: '',
+          page_path: '',
+          sub_button: []
+        }
+      ]
+    },
+    {
+      type: '',
+      name: '兑礼品卡',
+      key: '',
+      url: '',
+      media_id: '',
+      appid: '',
+      page_path: '',
+      sub_button: [
+        {
+          type: 'view',
+          name: '兑礼品卡',
+          key: '',
+          url: 'https://activity.wallstreetcn.com/giftredemption/?from=hrjsxk',
+          media_id: '',
+          appid: '',
+          page_path: '',
+          sub_button: []
+        },
+        {
+          type: 'view',
+          name: '下载APP',
+          key: '',
+          url:
+            'https://activity.wallstreetcn.com/newpackaget/receive.html?ngsem=111',
+          media_id: '',
+          appid: '',
+          page_path: '',
+          sub_button: []
+        },
+        {
+          type: 'view',
+          name: '在线客服',
+          key: '',
+          url: 'https://wdl.wallstreetcn.com/WechatIMG26.jpeg',
+          media_id: '',
+          appid: '',
+          page_path: '',
+          sub_button: []
+        }
+      ]
+    },
+    {
+      type: 'view',
+      name: '关注我',
+      key: '',
+      url: 'https://liugq5713.github.io',
+      media_id: '',
+      appid: '',
+      page_path: '',
+      sub_button: []
+    }
+  ]
+}
