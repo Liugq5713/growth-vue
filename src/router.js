@@ -38,6 +38,14 @@ export default new Router({
       children: [
         { path: '', component: () => import('./views/Bubble/index.vue') },
       ]
-    }
+    },
+    {
+      path:'/reactive',
+      name:'watch vs computed',
+      component:Layout,
+      children: [
+        { path: '', component: () => import('./views/Reactive/index.vue') },
+      ]
+    },
   ]
 })
