@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.4.9",
+    "veeno": "0.0.4",
     "vue": "^2.5.17",
     "vue-element-tree-table": "^1.0.0",
     "vue-router": "^3.0.1",

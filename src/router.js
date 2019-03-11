@@ -16,6 +16,14 @@ export default new Router({
       ]
     },
     {
+      path: '/vfor',
+      name: "v-for can't get dom element",
+      component:Layout,
+      children: [
+        { path: '', component: ()=>import('./views/VFor')},
+      ]
+    },
+    {
       path: '/treetable',
       name: '树表',
       component:Layout,
