@@ -4682,6 +4682,10 @@ normalize-wheel@^1.0.1:
   version "1.0.1"
   resolved "http://r.cnpmjs.org/normalize-wheel/download/normalize-wheel-1.0.1.tgz#aec886affdb045070d856447df62ecf86146ec45"
 
+nouislider@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.npm.taobao.org/nouislider/download/nouislider-11.1.0.tgz#1768eb5b854917325d41b96f2dc4eb3757d73381"
+
 npm-bundled@^1.0.1:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/npm-bundled/download/npm-bundled-1.0.5.tgz#3c1732b7ba936b3a10325aef616467c0ccbcc979"
@@ -6836,6 +6840,12 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
 
+veeno@0.0.4:
+  version "0.0.1"
+  resolved "https://registry.npm.taobao.org/veeno/download/veeno-0.0.1.tgz#0adcd6758fba82c559e51d75bd50d9299669562d"
+  dependencies:
+    nouislider "^11.1.0"
+
 vendors@^1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/vendors/download/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
@@ -6853,10 +6863,6 @@ vm-browserify@0.0.4:
   resolved "http://registry.npm.taobao.org/vm-browserify/download/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
-
-vue-element-tree-table@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-element-tree-table/-/vue-element-tree-table-1.0.0.tgz#b7ed7061b5ed192a0e22dbed07896b5dbe4b477b"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

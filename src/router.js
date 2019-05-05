@@ -10,50 +10,38 @@ export default new Router({
     {
       path: '/',
       name: '主页',
-      component:Layout,
-      children: [
-        { path: '', component: Home},
-      ]
+      component: Layout,
+      children: [{ path: '', component: Home }]
     },
     {
       path: '/vfor',
       name: "v-for can't get dom element",
-      component:Layout,
-      children: [
-        { path: '', component: ()=>import('./views/VFor')},
-      ]
-    },
-    {
-      path: '/treetable',
-      name: '树表',
-      component:Layout,
-      children: [
-        { path: '', component: () => import('./views/TreeTable/index.vue') },
-      ]
+      component: Layout,
+      children: [{ path: '', component: () => import('./views/VFor') }]
     },
     {
       path: '/jsonform',
       name: '生成表单',
-      component:Layout,
+      component: Layout,
       children: [
-        { path: '', component: () => import('./views/JsonForm/index.vue') },
+        { path: '', component: () => import('./views/JsonForm/index.vue') }
       ]
     },
     {
-      path:'/bubble',
-      name:'泡泡',
-      component:Layout,
+      path: '/bubble',
+      name: '泡泡',
+      component: Layout,
       children: [
-        { path: '', component: () => import('./views/Bubble/index.vue') },
+        { path: '', component: () => import('./views/Bubble/index.vue') }
       ]
     },
     {
-      path:'/reactive',
-      name:'watch vs computed',
-      component:Layout,
+      path: '/reactive',
+      name: 'watch vs computed',
+      component: Layout,
       children: [
-        { path: '', component: () => import('./views/Reactive/index.vue') },
+        { path: '', component: () => import('./views/Reactive/index.vue') }
       ]
-    },
+    }
   ]
 })
