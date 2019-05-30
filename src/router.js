@@ -55,5 +55,13 @@ export default new Router({
         { path: '', component: () => import('./views/Reactive/index.vue') },
       ]
     },
+    {
+      path:'/listener',
+      name:'listener',
+      component:Layout,
+      children: [
+        { path: '', component: () => import('./views/Listener') },
+      ]
+    },
   ]
 })
