@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>third</p>
-    <p>$listeners: {{$listeners}}</p>
+    <h2>third</h2>
+    <!-- <p>$listeners: {{$listeners}}</p> -->
     <el-button size="mini" @click="test" v-on="$listeners" type="primary">我是老三</el-button>
   </div>
 </template>

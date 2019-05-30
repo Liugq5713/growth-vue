@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>second</p>
-    <p>$listeners: {{$listeners}}</p>
+    <h2>second</h2>
+    <!-- <p>$listeners: {{$listeners}}</p> -->
     <third v-on="$listeners"/>
   </div>
 </template>

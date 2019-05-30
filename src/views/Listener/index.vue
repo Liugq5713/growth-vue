@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>父组件</p>
+    <h2>父组件</h2>
     <first @some="some"/>
   </div>
 </template>

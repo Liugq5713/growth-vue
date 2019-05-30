@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p>first</p>
-    <p>$listeners: {{$listeners}}</p>
+    <h2>first</h2>
     <second v-on="$listeners"></second>
   </div>
 </template>
